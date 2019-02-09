@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>
+        {% block title %}
+        {% endblock title %}
+      </title>
+      <link rel="stylesheet" href="/static/css/main.css">
+   </head>
+   <body>
+        {% block content %}
+        {% endblock content %}
+      <div class="conteiner">
+        <a href="https://flask-mysite-bogdan.herokuapp.com/">Home</a>
+        <a href="https://flask-mysite-bogdan.herokuapp.com/test">Test</a>
+        <a href="https://flask-mysite-bogdan.herokuapp.com/vadim">info</a>
+      </div>
+   </body>
+</html>
