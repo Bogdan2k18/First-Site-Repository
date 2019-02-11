@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+
+{% block title %}
+    Test page
+{% endblock title %}
+
+{% block content %}
+    <h1>Sign in</h1>
+    <div align="center">
+        {% if show %}
+        <form method="POST" action="{{url_for('reg')}}">
+            {{ form.csrf_token }}
+            <div style="padding: 20px; color: burlywood">
+            {{ form.username.label}}  
+            {{ form.username }}
+            </div>
+            <div style="padding: 20px; color: burlywood">
+            {{ form.phone_number.label}}   
+            {{ form.phone_number }}
+            </div>
+            <div style="padding: 20px; color: burlywood">
+            {{ form.address.label}}   
+            {{ form.address }}
+            </div>
+            <div style="padding: 20px; color: burlywood">
+            {{ form.password.label}}   
+            {{ form.password }}
+            </div>
+            <input type="submit" value="OK">
+        </form>
+        {% endif %}
+        <h2 style="color: {{color}}">{{error}}</h2>
+        {% if not show %}
+        <a><input type="button" value="Перейти в галерею" onClick='location.href="https://flask-mysite-bogdan.herokuapp.com/gallary"'></a>
+        {% endif %}
+    </div>
+
+
+
+{% endblock content %}

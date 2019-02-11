@@ -1,5 +1,6 @@
-from setting import Config
+
 from flask import Flask
 
 app = Flask(__name__)
-app.config.from_object(Config)
+app.debug = True
+app.config['SECRET_KEY'] = " hello"

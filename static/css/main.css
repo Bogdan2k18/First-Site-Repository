@@ -12,8 +12,9 @@ h1 {
 }
 a {
     border: 1px ridge #ffba7f;
+    font-size: 180%;
 }
-div {
-    position: fixed;
-    top: 97%;
+
+img {
+    border: 5px ridge #bde51d;
 }
