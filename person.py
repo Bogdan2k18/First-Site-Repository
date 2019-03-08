@@ -6,13 +6,3 @@ class Person:
         self.Lname = Lname
         self.age = age
         people.append(self)    
-Person("Bogdan", "Bogulov", 18)
-Person("Merkus", "XD", 17)
-Person("Bogdan", "Bogulov", 18)
-Person("Merkus", "XD", 17)
-Person("Bogdan", "Bogulov", 18)
-Person("Merkus", "XD", 17)
-Person("Bogdan", "Bogulov", 18)
-Person("Merkus", "XD", 17)
-Person("Bogdan", "Bogulov", 18)
-Person("Merkus", "XD", 17)

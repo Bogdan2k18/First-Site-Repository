@@ -15,14 +15,13 @@
 </head>
 
 <body>
-	<div class="container-fluid">
+	<nav class="nav navbar-dark bg-dark">
+			<h1 class="navbar-brand">None_ </h1>
+		
+			<a href="{{ url_for('home') }}"><button class="btn btn-danger">Главная страница</button></a>
+			<a href="{{ url_for('info') }}"><button class="btn btn-info"> Добавить</button></a>
 
-		<h1 class="logo text-center bg-success">MY<small> SITE</small></h1>
-		<div class="container">
-			<a href="#"><button class="btn-danger">Главная страница</button></a>
-			<a href="{{url_for('info')}}"></a><button class="btn-info"> Информация</button></a>
-		</div>
-	</div>
+	</nav><br>
 	{% block content %}{% endblock %}
 </body>
 

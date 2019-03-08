@@ -1,10 +1,22 @@
 {% extends 'wrapper.html' %}
 
-{% block title %}Lol{% endblock title %}
+{% block title %}Добавить{% endblock title %}
 
 {% block content %}
 <div class="container">
-    lol
+    <center>
+
+        <form class="form" action="/info" method="POST">
+            <div>
+                <input id="inp" type="text" name='Fname' placeholder="Имя"><br>
+                <input id="inp" type="text" name='Lname' placeholder="Фамилия"><br>
+                <input id="inp" type="number" name='Age' placeholder="Возраст"><br>
+            </div>
+            <input type="submit" name="submit" value="Добавить">
+
+        </form><br>
+        <p class="text-danger">{{error}}</p>
+    </center>
 </div>
 
 
